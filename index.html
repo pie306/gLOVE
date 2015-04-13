@@ -300,8 +300,11 @@
                             <h4>List of Parts and Early Conceptual Designs</h4>
                             <span>April 13, 2015</span>
                             <p>Researched various sensors, Bluetooth, android development, etc.  Developed basic conceptual design of project.  Specifically, decided project will likely use an <a href="https://www.sparkfun.com/products/12756">accelerometer</a>
-							and <a href="https://www.sparkfun.com/products/8606">flex sensor</a>.  Project will also need to incorporate a Bluetooth device.  Also decided that feasibility of creating an application to control all applications on android would 
-							be impractical.  Android runs separately between applications preventing two applications from interacting.  Only realistic solution would be to override all system controls.  As a result, project will likely focus primarily on computer interaction.</a></p>
+							and <a href="https://www.sparkfun.com/products/8606">flex sensor</a>.  We initially looked at using a magnetometer in conjunction with a multi axis accelerometer in order to be able to map pitch and yaw. However, after looking through 
+							different imu’s we determined that a magnetometer would be unrealistic given our budget as well as defeat the purpose of a cheap gesture recognizing glove. From there we decided to use a triple axis accelerometer and to implement a 
+							different scheme in order to recognize inputs in the y axis. As initially planned we are going to use a flex sensor to measure the bend of the hand. We will need some sort of microcontroller to process the data given by the various 
+							sensors as well as relay that data via Bluetooth to either a phone or computer. We still need to look into what controller or device to use.Project will also need to incorporate a Bluetooth device.  Also began looking into development 
+							of android application.</a></p>
                         </div>
                     </div>
 					<div class="col-md-4 col-sm-12 col-xs-12">
