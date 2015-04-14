@@ -7,6 +7,33 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>SiGlove</title>
+		<script type="text/javascript">
+            function showImage(imgName) {
+                document.getElementById('largeImg').src = imgName;
+                showLargeImagePanel();
+                unselectAll();
+            }
+            function showLargeImagePanel() {
+                document.getElementById('largeImgPanel').style.visibility = 'visible';
+            }
+            function unselectAll() {
+                if(document.selection) document.selection.empty();
+                if(window.getSelection) window.getSelection().removeAllRanges();
+            }
+            function hideMe(obj) {
+                obj.style.visibility = 'hidden';
+            }
+        </script>
+		<style type="text/css">
+            #largeImgPanel {
+                text-align: center;
+                visibility: hidden;
+                position: fixed;
+                z-index: 100;
+                top: 0; left: 0; width: 100%; height: 100%;
+                background-color: rgba(100,100,100, 0.5);
+            }
+        </style>
         <meta name="description" content="SiGlove Development Page">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta property="og:title" content="SiGlove" />
@@ -295,6 +322,19 @@
                     <div class="gallery-holder">
                         <div class="col-md-3 col-sm-6 col-xs-12 gallery-item">
                             <div class="gallery-thumb">
+								<h3>Top Level Diagram</h3>
+								<img src="img/toplevel.jpg" style="cursor:pointer" onclick="showImage('img/toplevel.jpg');" />
+								<div id="largeImgPanel" class="center" onclick="hideMe(this);">
+									<img id="largeImg" style="height: 300%; width: 60%" />
+								</div>
+                            </div>
+							<br/>
+							<div class="gallery-thumb">
+								<h3>Detailed Diagram</h3>
+								<img src="img/detailed.jpg" style="cursor:pointer" onclick="showImage('img/detailed.jpg');" />
+								<div id="largeImgPanel" class="center" onclick="hideMe(this);">
+									<img id="largeImg" style="height: 300%; width: 60%" />
+								</div>
                             </div>
                         </div>
                     </div>
@@ -372,9 +412,8 @@
                 </div>
                 <div class="row"> <!--Pictures-->
                     <div class="gallery-holder">
-                        <div class="col-md-3 col-sm-6 col-xs-12 gallery-item">
-                            <div class="gallery-thumb">
-                            </div>
+                        <div class="col-md-8 col-sm-8">
+							<a href="PartsList.pdf" download>Parts</a>
                         </div>
                     </div>
                 </div>

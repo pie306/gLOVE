@@ -10,6 +10,11 @@
 	$(".navbar").sticky({
 		topSpacing: 0,
 	});
+	
+	$(".picture").click(function() {
+		$(this).attr('width', '400');
+		$(this).attr('height', '300');
+	});
 
 
 	$('.nav').singlePageNav({
