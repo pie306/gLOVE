@@ -541,7 +541,7 @@ html,body {
     border-color: #e46948;
 }
 
-#about {
+#about, #gallery, #downloads {
     background: #3c4755;
 }
 
@@ -601,7 +601,7 @@ html,body {
     background: #e46948;
 }
 
-#gallery {
+#us, #updates, #schedule {
     background: #2d3640;
 }
 
