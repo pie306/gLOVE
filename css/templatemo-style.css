@@ -619,6 +619,7 @@ html,body {
     position: relative;
 }
 .center {
+	position: relative;
     margin-left: auto;
     margin-right: auto;
 	padding: 20%;
