@@ -323,17 +323,33 @@
                        <div class="col-md-3 col-sm-6 col-xs-12 gallery-item">
                             <div class="gallery-thumb">
 								<h3>Top Level Diagram</h3>
-								<img src="img/toplevel.png" style="width=40%; height=40% cursor:pointer" onclick="showImage('img/toplevel.png');" />
+								<img src="img/toplevel.jpg" style="width=40%; height=40% cursor:pointer" onclick="showImage('img/toplevel.jpg');" />
 								<div id="largeImgPanel" onclick="hideMe(this);">
-									<img id="largeImg" style="height: 100%; width: 100%" />
+									<img class="centered" id="largeImg" style="height: 80%; width: 80%" />
 								</div>
                             </div>
-							<br/>
+							</br>
 							<div class="gallery-thumb">
 								<h3>Detailed Diagram</h3>
-								<img src="img/detailed.png" style="width=400%; height=400% cursor:pointer" onclick="showImage('img/detailed.png');" />
+								<img src="img/Detailed.jpg" style="width=400%; height=400% cursor:pointer" onclick="showImage('img/Detailed.jpg');" />
 								<div id="largeImgPanel" onclick="hideMe(this);">
-									<img id="largeImg" style="height: 300%; width: 80%" />
+									<img class="centered" id="largeImg" style="height: 300%; width: 80%" />
+								</div>
+                            </div>
+							</br>
+							<div class="gallery-thumb">
+								<h3>Housing Unit</h3>
+								<img src="img/HousingUnit.jpg" style="width=100%; height=100% cursor:pointer" onclick="showImage('img/HousingUnit.jpg');" />
+								<div id="largeImgPanel" onclick="hideMe(this);">
+									<img class="centered" id="largeImg" style="height: 100%; width: 100%" />
+								</div>
+                            </div>
+							</br>
+							<div class="gallery-thumb">
+								<h3>Circuit Schematic</h3>
+								<img src="img/schematic.jpg" style="width=100%; height=100% cursor:pointer" onclick="showImage('img/schematic.jpg');" />
+								<div id="largeImgPanel" onclick="hideMe(this);">
+									<img class="centered" id="largeImg" style="height: 80%; width: 80%" />
 								</div>
                             </div>
                         </div>
@@ -364,7 +380,7 @@
                         <div class="profile-content">
                             <h4>Product Purchasing and Android Development</h4>
                             <span>April 20, 2015</span>
-                            <p>This week we are waiting on our parts to arrive. We have ordered an Arduino uno as well as a Bluetooth transceiver to connect with a computer. The specific parts used are listed in the parts list on the website. In terms of sensors, we ordered a triple axis accelerometer and a flex sensor. Once the parts arrive we plan on testing the range of each of the sensors as well as testing the ADC’s on the Arduino board.  While waiting for these parts to arrive, we spent time familiarizing ourselves with android development as well as how to connect devices via Bluetooth. In terms of languages and IDE we are writing our android code in java using android studio.</a></p>
+                            <p>This week we are waiting on our parts to arrive. We have ordered an Arduino uno as well as a Bluetooth transceiver to connect with a computer. The specific parts used are listed in the parts list on the website. In terms of sensors, we ordered a triple axis accelerometer and a flex sensor. Once the parts arrive we plan on testing the range of each of the sensors as well as testing the ADC’s on the Arduino board.  While waiting for these parts to arrive, we spent time familiarizing ourselves with <a href="http://www.instructables.com/id/How-control-arduino-board-using-an-android-phone-a/">android development</a> as well as how to connect devices via Bluetooth. In terms of languages and IDE we are writing our android code in java using android studio.</a></p>
                         </div>
                     </div>
 					<div class="col-md-4 col-sm-6 col-xs-12">
@@ -430,12 +446,16 @@
                     </div>
                 </div>
                 <div class="row"> <!--Pictures-->
-                    <div class="gallery-holder">
-                        <div class="col-md-8 col-sm-8">
-							<a href="PartsList.pdf" download>Parts</a>
-                        </div>
+					<div class="col-md-8 col-sm-8">
+						<a href="PartsList.pdf" download>List of Parts</a>
+                    </div>
+					<div class="col-md-8 col-sm-8">
+						<a href="img/BOM.jpg" download>Bill of Materials</a>
+                    </div>
+					<div class="gallery-holder">
                     </div>
                 </div>
+				
             </div>
         </section>
 		
