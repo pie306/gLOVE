@@ -139,6 +139,7 @@
                             <li><a href="#about">About</a></li>
                             <li><a href="#us">Us</a></li>
                             <li><a href="#gallery">Gallery</a></li>
+							<li><a href="#videos">Videos</a></li>
 							<li><a href="#updates">Updates</a></li>
 							<li><a href="#downloads">Downloads</a></li>
 							<li><a href="#schedule">Schedule</a></li>
@@ -336,14 +337,15 @@
                 <div class="row"> <!--Pictures-->
                     <div class="gallery-holder">
                        <div class="col-md-3 col-sm-6 col-xs-12 gallery-item">
+							<h3>Top Level Diagram</h3>
                             <div class="gallery-thumb">
-								<h3>Top Level Diagram</h3>
 								<img src="img/toplevel.png" style="width=40%; height=40% cursor:pointer" onclick="showImage('img/toplevel.png');" />
 								<div id="largeImgPanel" onclick="hideMe(this);">
 									<img class="centered" id="largeImg" style="height: 80%; width: 80%" />
 								</div>
                             </div>
-							</br>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 gallery-item">
 							<div class="gallery-thumb">
 								<h3>Detailed Diagram</h3>
 								<img src="img/detailed.png" style="width=400%; height=400% cursor:pointer" onclick="showImage('img/detailed.png');" />
@@ -351,7 +353,8 @@
 									<img class="centered" id="largeImg" style="height: 300%; width: 80%" />
 								</div>
                             </div>
-							</br>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 gallery-item">
 							<div class="gallery-thumb">
 								<h3>Housing Unit</h3>
 								<img src="img/HousingUnit.jpg" style="width=100%; height=100% cursor:pointer" onclick="showImage('img/HousingUnit.jpg');" />
@@ -359,12 +362,42 @@
 									<img class="centered" id="largeImg" style="height: 100%; width: 100%" />
 								</div>
                             </div>
-							</br>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 gallery-item">
 							<div class="gallery-thumb">
 								<h3>Circuit Schematic</h3>
-								<img src="img/Schematic.jpg" style="width=100%; height=100% cursor:pointer" onclick="showImage('img/Schematic.jpg');" />
+								<img src="img/Schematic.png" style="width=100%; height=100% cursor:pointer" onclick="showImage('img/Schematic.png');" />
 								<div id="largeImgPanel" onclick="hideMe(this);">
 									<img class="centered" id="largeImg" style="height: 80%; width: 80%" />
+								</div>
+                            </div>
+                        </div>
+					
+					<div class="gallery-holder">
+						<div class="col-md-3 col-sm-6 col-xs-12 gallery-item">
+							<div class="gallery-thumb">
+								<h3>Bluetooth Data Packets</h3>
+								<img src="img/DataPacket.jpg" style="width=100%; height=100% cursor:pointer" onclick="showImage('img/DataPacket.jpg');" />
+								<div id="largeImgPanel" onclick="hideMe(this);">
+									<img class="centered" id="largeImg" style="height: 80%; width: 80%" />
+								</div>
+                            </div>
+                        </div>
+						<div class="col-md-3 col-sm-6 col-xs-12 gallery-item">
+							<div class="gallery-thumb">
+								<h3>Computer Program Prototype Design</h3>
+								<img src="img/ComputerPrototypeDesign.png" style="width=100%; height=100% cursor:pointer" onclick="showImage('img/ComputerPrototypeDesign.png');" />
+								<div id="largeImgPanel" onclick="hideMe(this);">
+									<img class="centered" id="largeImg" style="height: 80%; width: 60%" />
+								</div>
+                            </div>
+                        </div>
+						<div class="col-md-3 col-sm-6 col-xs-12 gallery-item">
+							<div class="gallery-thumb">
+								<h3>Computer Program Block Diagram</h3>
+								<img src="img/Computer.jpg" style="width=100%; height=100% cursor:pointer" onclick="showImage('img/Computer.jpg');" />
+								<div id="largeImgPanel" onclick="hideMe(this);">
+									<img class="centered" id="largeImg" style="height: 80%; width: 60%" />
 								</div>
                             </div>
                         </div>
@@ -372,7 +405,32 @@
                 </div>
             </div>
         </section>
-
+		
+		<section id="videos" class="page-section">
+            <div class="container">
+                <div class="row page-heading">
+                    <div class="col-md-8 col-sm-8">
+                        <h3 class="page-title">Videos</h3>
+                        <p class="page-subtitle">Here are some clips of our project in development.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-4 hidden-xs page-icon-holder">
+                        <p class="page-icon"><i class="fa fa-user"></i></p>
+                    </div>
+                </div>
+                <div class="row">
+					<div class="gallery-holder">
+                       <div class="col-sm-6 col-xs-12 gallery-item">
+							<div class="gallery-thumb">
+								<h3>First Prototype</h3>
+								<video width="400" controls>
+										<source src="img/FirstPrototype.mp4" type="video/mp4">
+								</video>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
         <section id="updates" class="page-section">
             <div class="container">
@@ -485,6 +543,9 @@
                     </div>
 					<div class="col-md-8 col-sm-8">
 						<a href="img/BOM.jpg" download>Bill of Materials</a>
+                    </div>
+					<div class="col-md-8 col-sm-8">
+						<a href="EnergyWorksheet.xlsx" download>Energy Worksheet</a>
                     </div>
 					<div class="gallery-holder">
                     </div>

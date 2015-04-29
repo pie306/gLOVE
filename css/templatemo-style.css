@@ -548,7 +548,7 @@ html,body {
     border-color: #e46948;
 }
 
-#about, #gallery, #downloads {
+#about, #gallery, #updates, #schedule{
     background: #3c4755;
 }
 
@@ -608,7 +608,7 @@ html,body {
     background: #e46948;
 }
 
-#us, #updates, #schedule {
+#us, #videos, #downloads {
     background: #2d3640;
 }
 
@@ -624,6 +624,8 @@ html,body {
 .gallery-thumb {
     overflow: hidden;
     position: relative;
+	padding-right: 10%;
+	float: left;
 }
 .center {
 	position: relative;
