@@ -136,8 +136,8 @@
 
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#home" class="current">Home</a></li>
-                            <li><a href="#us">Us</a></li>
                             <li><a href="#about">Proposal</a></li>
+                            <li><a href="#us">Us</a></li>
                             <li><a href="#gallery">Pictures</a></li>
 							<li><a href="#videos">Film</a></li>
 							<li><a href="#updates">Update</a></li>
@@ -154,8 +154,8 @@
             <div class="container">
                 <div class="row page-heading">
                     <div class="col-md-8 col-sm-8">
-                        <h3 class="page-title">About</h3>
-                        <p class="page-subtitle">Our Product</p>
+                        <h3 class="page-title">Proposal</h3>
+                        <p class="page-subtitle">Our Product Proposal</p>
                     </div>
                     <div class="col-md-4 col-sm-4 hidden-xs text-right">
                         <p class="page-icon"><i class="fa fa-flag"></i></p>
@@ -164,24 +164,50 @@
 				<div class="row">
 					<div class="gallery-holder">
 						<div class="col-md-8 col-sm-8">
-							<h1><b>GOAL</b></h1>
+							<h1><b>OVERVIEW AND MOTIVATION</b></h1>
 						
-							<p>Our goal is to bring the world together through a simpler means of communication.  A smaller set of glove based gestures 
-							will make the system far intuitive while expanding our product's applicability to a large variety of systems
-							and situations.</p>
+							<p>The hand is a dexterous and intuitive part of the body.  Steve Jobs was right when he suggested that it was the easiest control system to implement.  As a result, it makes the ideal input interface for effectively all digital devices that we use every day.  However, most devices that we use rely on varying systems.  Computers rely on keyboards and mice, smartphones have complicated GUI’s, and gaming consoles all use different controllers.  Rather than differentiating between all these technologies, a simpler approach would be to use a universal input system, one that uses the hand as a gesture based input system.</p>
 							</br>
 							</br>
-							<h1><b>DESIGN</b></h1>
+							<h1><b>PROJECT DETAILS</b></h1>
 							
-							<p>Our product design intends to use a flex sensor for the palm and an accelerometer to control both directional movement as well as
-							basic gestures.  These components will be able to send 6 distinct gesture commands to both Bluetooth computers as well as android devices.</p>
+							<p>We plan to primarily focus on developing a glove based input system that can take advantage of the hand’s wide variety of movement capabilities to create a gesture based interface that can work on most digital devices.  This can be done by using Bluetooth to communicate with the bevy of different technologies that exist in the world around us.  By focusing on creating a uniform sensor information transfer system, the project would be able to develop applications to fit any device’s needs. 
+<br/><br/>Creating that system will likely use accelerometers to detect axis motion and flex sensors to detect bending in the hand.  These values will be sent to an Arduino Nano to convert the values and send them over Bluetooth to the respective devices, be it android or desktop.  Those values will be sent over in a uniform control scheme so that, no matter the system, the data can be read, converted, and used instantaneously.
+<br/><br/>The development process will be split into three separate steps.  The first is to figure out how to send the correct data over the Bluetooth to ensure that the sensor data is being read correctly.  Once this is done, the next two steps are to build a glove and 3d printed compartment to create a sleek design and to develop applications for the system. 
+</p>
 							</br>
 							</br>
-							<h1><b>Control Applications</b></h1>
+							<h1><b>USER SCENARIOS</b></h1>
 							
-							<p>The eventual application will attempt to allow a user to control simple user inputs of their selection.  For example, the space bar typically
-							has the ability to pause a video.  If mapped properly, the user would be able to pause and play the video.  The large variety of possible options
-							that come with control mapping means that the user has a great degree of flexibility.</p>
+							<p>Case 1:
+	</br>Drivers that are in need of accessing their phone or some other Bluetooth enabled device in their car.  If they need to focus on the road, they won’t have the ability to easily access and change the songs or answer phone calls without taking their eyes off of the road.  That could result in a dangerous hazard that needs to be remedied.  However, making a quick gesture with their hands would allow for control of those devices while keeping their eyes on the road.
+	</br></br>Case 2:
+	</br>Winter sports such as snowboarding would be an excellent time to be able to access Bluetooth enabled devices.  However, it is difficult to navigate a phone screen to change songs when your body is trying to drift down the slopes.  A quick hand gesture though is imminently feasible and would allow the athletes to control their music while remaining active.
+	</br></br>Case 3:
+	</br>Gaming is also another great possibility for the SiGlove.  SiGlove provides the ability to send information and data to another system such as a gaming console.  While it is limited to only five inputs at the moment.  That only makes the games that much more extreme!!
+</p>
+							</br>
+							</br>
+							<h1><b>STATE OF MARKET</b></h1>
+							<p>While there are approaches to hand based gesture input systems, most of them are very overly complicated and bulky.  This results in increased production costs as well as difficulty wearing them for long periods of time.  By limiting the scope and size of SiGlove, we would be able to create a device that could be worn all day while remaining fashionable and comfortable to use.</p>
+							</br></br>
+							<h1><b>SOLUTION</b></h1>
+							<p>We propose building a glove based input system that can develop a large number of applications.  For the hardware, we would need</p>
+							</br>
+							<ul><li>Arduino Nano</li>
+							<li>Flex Sensor</li>
+							<li>Accelerometer</li>
+							<li>Battery</li>
+							<li>Boost Converter/charger</li>
+							<li>Button</li>
+							<li>Switch</li>
+							</ul>
+							</br>
+							<p>For application development, we are planning on creating an android application that can control music playing as well as a computer application to type and control the mouse input.</p>
+							</br>
+							</br>
+							<h1><b>Budget Estimation</b></h1>
+							<p>$80</p>
 						</div>
 					</div>
 				</div>
@@ -696,7 +722,7 @@
 						<a href="PartsList.pdf" download>List of Parts</a>
                     </div>
 					<div class="col-md-8 col-sm-8">
-						<a href="img/BOM.jpg" download>Bill of Materials</a>
+						<a href="PartsList.xlsx" download>Bill of Materials</a>
                     </div>
 					<div class="col-md-8 col-sm-8">
 						<a href="EnergyWorksheet.xlsx" download>Energy Worksheet</a>
